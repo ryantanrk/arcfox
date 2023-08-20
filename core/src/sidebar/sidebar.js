@@ -153,6 +153,11 @@ searchInput.addEventListener("keydown", function(event) {
   }
 });
 
+// selects text in search bar when focused
+searchInput.addEventListener("focus", () => {
+  searchInput.select();
+});
+
 // Sidebar Code
 function initTabSidebarControl() {
   const list = document.getElementById('tab-list');
